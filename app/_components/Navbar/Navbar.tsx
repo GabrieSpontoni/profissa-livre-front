@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
 
 export default function Navbar() {
   return (
@@ -61,6 +62,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="navbar-end">
+        <ThemeSwitch />
         <div className="dropdown dropdown-end">
           <div
             tabIndex={0}
