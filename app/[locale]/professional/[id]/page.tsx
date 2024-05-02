@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function Professional() {
+  const t = useTranslations("Index");
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-base-200 text-base-content">
       <div className="hero min-h-screen bg-base-200">
@@ -17,11 +19,7 @@ export default function Professional() {
           </div>
           <div>
             <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
+            <p className="py-6">{t("title")}</p>
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>

@@ -1,13 +1,16 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
+const propsImageCarousel: {
+  width: number;
+  height: number;
+} = {
+  width: 400,
+  height: 300,
+};
 export default function Home() {
-  const propsImageCarousel: {
-    width: number;
-    height: number;
-  } = {
-    width: 400,
-    height: 300,
-  };
+  const t = useTranslations("Index");
+
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-base-200 text-base-content">
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -24,7 +27,7 @@ export default function Home() {
           </div>
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
+          <h2 className="card-title">{t("title")}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div className="card-actions justify-end">
             <button className="btn btn-primary">Buy Now</button>

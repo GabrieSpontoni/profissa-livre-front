@@ -13,5 +13,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <body className={inter.className}>{children}</body>;
+  return <div className={inter.className}>{children}</div>;
 }
