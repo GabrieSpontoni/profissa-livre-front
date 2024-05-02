@@ -61,7 +61,7 @@ export default function Navbar() {
           />
         </div>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end gap-4">
         <ThemeSwitch />
         <div className="dropdown dropdown-end">
           <div
