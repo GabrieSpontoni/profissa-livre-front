@@ -1,9 +1,6 @@
-"use client";
-import { Link, useRouter } from "@/navigation";
+import { Link } from "@/navigation";
 
 export default function NavbarStart() {
-  const router = useRouter();
-
   return (
     <>
       <div className="lg:hidden">
@@ -41,15 +38,10 @@ export default function NavbarStart() {
         </div>
       </div>
       <div className="hidden lg:flex">
-        <Link className="btn btn-ghost text-xl" href="/" replace>
+        <Link className="btn btn-ghost text-xl" href="/">
           Profissa livre
         </Link>
-        <Link
-          className="btn btn-ghost text-xl"
-          href="/professional/123"
-          replace
-          prefetch
-        >
+        <Link className="btn btn-ghost text-xl" href="/professional/123">
           Profissa
         </Link>
       </div>
