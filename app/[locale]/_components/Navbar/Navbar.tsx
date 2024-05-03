@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ThemeSwitch from "./components/ThemeSwitch/ThemeSwitch";
-import { Link } from "@/navigation";
 import NavbarStart from "./components/Routes/Routes";
 import LangSwitch from "./components/LangSwitch/LangSwitch";
 
@@ -10,16 +9,16 @@ export default function Navbar() {
       <div className="navbar-start">
         <NavbarStart />
       </div>
-      <div className="navbar-center">
+      <div className="navbar-center hidden md:flex">
         <div className="form-control">
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered w-24 rounded-3xl md:w-auto"
+            className="input input-bordered w-96 rounded-3xl"
           />
         </div>
       </div>
-      <div className="navbar-end gap-4">
+      <div className="navbar-end">
         <ThemeSwitch />
         <LangSwitch />
         <div className="dropdown dropdown-end">

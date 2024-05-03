@@ -14,7 +14,7 @@ export default function Professional() {
         animationData={require("@/public/lotties/money.json")}
       />
       <Section
-        title="Ideias Inovadoras e Modernas"
+        title="Ideias inovadoras e modernas"
         description="Descubra soluções inteligentes para os desafios domésticos de
         hoje! Com um toque inovador e moderno, trago ideias criativas
         para transformar sua casa. De reparos técnicos a projetos de

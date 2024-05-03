@@ -19,7 +19,9 @@ export default function Section({
             </div>
           </div>
           <div>
-            <h1 className="text-5xl font-bold">{title}</h1>
+            <h1 className="text-3xl font-bold text-center md:text-left">
+              {title}
+            </h1>
             <p className="py-6">{description}</p>
             <button className="btn btn-primary">Get Started</button>
           </div>

@@ -16,7 +16,9 @@ export default function Hero() {
             />
           </div>
           <div>
-            <h1 className="text-5xl font-bold">Gabriel Spontoni</h1>
+            <h1 className="text-3xl font-bold text-center md:text-left">
+              Gabriel Spontoni
+            </h1>
             <p className="py-6">
               Como marido de aluguel autônomo nos últimos 10 anos, adquiri uma
               ampla gama de habilidades práticas que me permitem lidar com uma
