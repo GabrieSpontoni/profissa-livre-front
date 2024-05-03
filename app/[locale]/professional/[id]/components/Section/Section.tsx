@@ -4,15 +4,21 @@ export default function Section({
   title,
   description,
   animationData,
+  reverse,
 }: {
   title: string;
   description: string;
   animationData: unknown;
+  reverse?: boolean;
 }) {
   return (
     <div className="flex flex-col items-center justify-center py-20 text-base-content">
       <div className="hero">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div
+          className={`hero-content flex-col lg:${
+            reverse ? "flex-row-reverse" : "flex-row"
+          }`}
+        >
           <div>
             <div className="w-48 h-48">
               <Lottie animationData={animationData} />
@@ -23,7 +29,6 @@ export default function Section({
               {title}
             </h1>
             <p className="py-6">{description}</p>
-            <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
       </div>
