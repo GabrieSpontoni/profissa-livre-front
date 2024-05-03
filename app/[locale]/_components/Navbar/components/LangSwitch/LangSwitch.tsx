@@ -1,6 +1,5 @@
 "use client";
-import { Link } from "@/navigation";
-import { usePathname } from "@/navigation";
+import { Link, usePathname } from "@/navigation";
 import { useLocale } from "next-intl";
 
 import { BsGlobe } from "react-icons/bs";
