@@ -1,28 +1,7 @@
 import Image from "next/image";
 
 export default function Hero() {
-  const services = [
-    {
-      id: 1,
-      name: "Elétrica",
-    },
-    {
-      id: 2,
-      name: "Hidráulica",
-    },
-    {
-      id: 3,
-      name: "Pintura",
-    },
-    {
-      id: 4,
-      name: "Serviços de pedreiro",
-    },
-    {
-      id: 5,
-      name: "Instalação de máquina de lavar louça",
-    },
-  ];
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-base-200 text-base-content">
       <div className="hero min-h-screen bg-base-200">
@@ -48,13 +27,6 @@ export default function Hero() {
               elétricos e hidráulicos até montagem de móveis e pintura, estou
               equipado para lidar com qualquer desafio que surgir.
             </p>
-            <div className="flex flex-wrap gap-2 justify-center md:justify-start">
-              {services.map((service) => (
-                <div key={service.id} className="badge badge-primary gap-2">
-                  {service.name}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import Hero from "./components/Hero/Hero";
-import Section from "./components/Section/Section";
+import Section from "./components/SectionMarket/SectionMarket";
 import WhatsAppFixed from "./components/WhatsAppFixed/WhatsAppFixed";
 
 export default function Professional() {
