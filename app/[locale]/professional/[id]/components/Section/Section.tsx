@@ -15,8 +15,8 @@ export default function Section({
     <div className="flex flex-col items-center justify-center py-20 text-base-content">
       <div className="hero">
         <div
-          className={`hero-content flex-col lg:${
-            reverse ? "flex-row-reverse" : "flex-row"
+          className={`hero-content flex-col ${
+            reverse ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
         >
           <div>
