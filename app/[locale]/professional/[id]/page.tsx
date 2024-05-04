@@ -1,5 +1,6 @@
 import Hero from "./components/Hero/Hero";
 import Section from "./components/SectionMarket/SectionMarket";
+import SectionServices from "./components/SectionServices/SectionServices";
 import WhatsAppFixed from "./components/WhatsAppFixed/WhatsAppFixed";
 
 export default function Professional() {
@@ -25,6 +26,7 @@ export default function Professional() {
         animationData={require("@/public/lotties/enginner.json")}
         reverse
       />
+      <SectionServices />
     </>
   );
 }
