@@ -4,9 +4,9 @@ export default function SectionServices() {
   const data = [
     {
       id: 1,
-      title: "ARE AWESOME",
-      tagline: "NEXTJS 13 & SWIPER SLIDER",
-      image: "/image1.jpg",
+      title: "Pintura",
+      tagline: "Serviço de pintura de alta qualidade",
+      image: "/images/pintura.webp",
       buttons: [
         {
           id: 1,
@@ -18,9 +18,9 @@ export default function SectionServices() {
     },
     {
       id: 2,
-      title: "GIVE IT A SHOOT",
-      tagline: "IF YOU LIKE IT",
-      image: "/image2.jpg",
+      title: "Reforma",
+      tagline: "Reforma de alta qualidade e durabilidade",
+      image: "/images/reforma.png",
       buttons: [
         {
           id: 1,

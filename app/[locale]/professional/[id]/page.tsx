@@ -1,12 +1,11 @@
 import Hero from "./components/Hero/Hero";
 import Section from "./components/SectionMarket/SectionMarket";
 import SectionServices from "./components/SectionServices/SectionServices";
-import WhatsAppFixed from "./components/WhatsAppFixed/WhatsAppFixed";
+
 
 export default function Professional() {
   return (
     <>
-      <WhatsAppFixed />
       <Hero />
       <Section
         title="Orçamento que cabe no bolso"
