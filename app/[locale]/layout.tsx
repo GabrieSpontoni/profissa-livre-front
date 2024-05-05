@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang={locale}>
       <body className={inter.className}>
-        <ThemeProvider>
+        <ThemeProvider defaultTheme="light">
           <>
             <Navbar />
             {children}
