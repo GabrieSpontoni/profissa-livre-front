@@ -1,7 +1,7 @@
+import Lottie from "@/app/[locale]/_components/Lottie/Lottie";
 import Image from "next/image";
 
 export default function Hero() {
-  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-base-200 text-base-content">
       <div className="hero min-h-screen bg-base-200">
@@ -17,9 +17,16 @@ export default function Hero() {
             />
           </div>
           <div>
-            <h1 className="text-3xl font-bold text-center md:text-left">
-              Pedro Henrique
-            </h1>
+            <div className="flex items-center gap-4 justify-center lg:justify-start">
+              <h1 className="text-3xl font-bold text-center md:text-left">
+                Pedro Henrique
+              </h1>
+              <div className="w-12 h-12">
+                <Lottie
+                  animationData={require("@/public/lotties/hello.json")}
+                />
+              </div>
+            </div>
             <p className="py-6">
               Como prestador de serviços autônomo nos últimos 10 anos, adquiri
               uma ampla gama de habilidades práticas que me permitem lidar com

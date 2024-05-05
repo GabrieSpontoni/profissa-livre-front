@@ -33,7 +33,7 @@ export default function SectionServices() {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between">
+    <div className="flex flex-col items-center justify-between py-20">
       <Carousel data={data} />
     </div>
   );

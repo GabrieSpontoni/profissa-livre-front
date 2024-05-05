@@ -12,7 +12,7 @@ export default function Section({
   reverse?: boolean;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center py-20 text-base-content">
+    <div className="flex flex-col items-center justify-center pt-20 text-base-content">
       <div className="hero">
         <div
           className={`hero-content flex-col ${

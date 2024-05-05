@@ -1,7 +1,6 @@
 import Hero from "./components/Hero/Hero";
-import Section from "./components/SectionMarket/SectionMarket";
+import Section from "./components/SectionMarketing/SectionMarketing";
 import SectionServices from "./components/SectionServices/SectionServices";
-
 
 export default function Professional() {
   return (
@@ -24,6 +23,16 @@ export default function Professional() {
         Experimente a diferença de uma abordagem fresca e inspiradora!"
         animationData={require("@/public/lotties/enginner.json")}
         reverse
+      />
+      <Section
+        title="Qualidade e durabilidade"
+        description="Com um compromisso inabalável com a qualidade e a durabilidade,
+        ofereço serviços excepcionais que você pode confiar. De reparos
+        simples a projetos complexos, cada trabalho é concluído com
+        atenção aos detalhes e um alto padrão de excelência. Sua satisfação
+        é minha prioridade, e estou comprometido em superar suas expectativas
+        em cada etapa do processo."
+        animationData={require("@/public/lotties/hand-shake.json")}
       />
       <SectionServices />
     </>
