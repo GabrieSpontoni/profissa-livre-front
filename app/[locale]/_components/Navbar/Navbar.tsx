@@ -32,7 +32,7 @@ export default function Navbar() {
                 width={40}
                 height={40}
                 alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
               />
             </div>
           </div>
