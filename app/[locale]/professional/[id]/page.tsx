@@ -5,7 +5,7 @@ import SectionServices from "./components/SectionServices/SectionServices";
 export default function Professional() {
   return (
     <>
-      <Hero />
+      <SectionServices />
       <Section
         title="Orçamento que cabe no bolso"
         description="Seu prestador de serviços confiável e acessível está aqui para
@@ -34,7 +34,7 @@ export default function Professional() {
         em cada etapa do processo."
         animationData={require("@/public/lotties/hand-shake.json")}
       />
-      <SectionServices />
+      <Hero />
     </>
   );
 }
