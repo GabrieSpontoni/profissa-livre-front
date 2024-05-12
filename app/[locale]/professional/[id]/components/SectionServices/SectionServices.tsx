@@ -34,7 +34,7 @@ export default function SectionServices() {
 
 
   return (
-    <div className="min-h-screen">
+    <div>
       <Carousel data={data} />
 
       <div className="flex flex-col items-center">
@@ -65,6 +65,33 @@ export default function SectionServices() {
                     100+ avaliações
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-row items-center">
+        <div className="hero">
+          <div className="hero-content justify-start items-center px-4 w-full">
+            <div>
+              <div className="pb-4">
+                <h1 className="text-xl font-bold md:text-left">
+                  Serviços oferecidos
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, voluptates.
+                </p>
+              </div>
+              <div className="pb-4">
+                <h1 className="text-xl font-bold md:text-left">
+                  Área de atuação
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur, voluptates.
+                </p>
               </div>
             </div>
           </div>
