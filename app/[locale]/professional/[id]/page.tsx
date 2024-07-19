@@ -1,20 +1,21 @@
-import Hero from "./components/Hero/Hero";
-import Section from "./components/SectionMarketing/SectionMarketing";
-import SectionServices from "./components/SectionServices/SectionServices";
+import Hero from "../../_components/Hero/Hero";
+import Section from "../../_components/SectionMarketing/SectionMarketing";
+import SectionServices from "../../_components/SectionServices/SectionServices";
 
 export default async function Professional() {
   const getProfessional = async () => {
-    const response = await fetch("http://localhost:3001/profissa/12555");
+    const response = await fetch("http://localhost:3001/profissa/12555", {
+      next: { revalidate: 0 },
+    });
     const data = await response.json();
     return data;
   };
 
   const professional = await getProfessional();
 
-  console.log(professional);
   return (
     <>
-      <SectionServices />
+      <SectionServices data={professional} />
       <Section
         title="Orçamento que cabe no bolso"
         description="Seu prestador de serviços confiável e acessível está aqui para
