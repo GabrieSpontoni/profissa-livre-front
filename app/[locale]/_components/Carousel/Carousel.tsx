@@ -21,7 +21,7 @@ interface CarouselProps {
 
 export default function Carousel({ data }: CarouselProps) {
   return (
-    <div className="h-96 xl:max-w-4xl">
+    <div className="h-96">
       <Swiper
         pagination={{
           type: "bullets",

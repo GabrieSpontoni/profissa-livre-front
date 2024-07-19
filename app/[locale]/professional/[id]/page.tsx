@@ -4,9 +4,12 @@ import SectionServices from "../../_components/SectionServices/SectionServices";
 
 export default async function Professional() {
   const getProfessional = async () => {
-    const response = await fetch("http://localhost:3001/profissa/12555", {
-      next: { revalidate: 0 },
-    });
+    const response = await fetch(
+      "https://profissa-livre-back.vercel.app/profissa/12555",
+      {
+        next: { revalidate: 0 },
+      }
+    );
     const data = await response.json();
     return data;
   };
