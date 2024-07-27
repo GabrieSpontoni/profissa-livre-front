@@ -37,6 +37,7 @@ export interface ProfissaData {
   rating: number;
   reviews: Review[];
   location: Location;
+  servicesDescription: string;
   servicesOffered: ServiceOffered[];
   contact: Contact;
   availability: string[];

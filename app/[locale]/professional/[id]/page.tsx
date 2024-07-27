@@ -1,15 +1,11 @@
-import Hero from "../../_components/Hero/Hero";
 import Section from "../../_components/SectionMarketing/SectionMarketing";
 import SectionServices from "../../_components/SectionServices/SectionServices";
 
 export default async function Professional() {
   const getProfessional = async () => {
-    const response = await fetch(
-      "https://profissa-livre-back.vercel.app/profissa/12555",
-      {
-        next: { revalidate: 0 },
-      }
-    );
+    const response = await fetch("http://localhost:3001/profissa/12555", {
+      next: { revalidate: 0 },
+    });
     const data = await response.json();
     return data;
   };
@@ -47,7 +43,6 @@ export default async function Professional() {
         em cada etapa do processo."
         animationData={require("@/public/lotties/hand-shake.json")}
       />
-      <Hero />
     </>
   );
 }

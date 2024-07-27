@@ -18,7 +18,22 @@ const config: Config = {
   plugins: [require("daisyui")],
 
   daisyui: {
-    themes: ["light", "dark"],
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["light"],
+          ".bg-fixed": {
+            "background-color": "oklch(var(--b2))",
+          },
+        },
+        dark: {
+          ...require("daisyui/src/theming/themes")["dark"],
+          ".bg-fixed": {
+            "background-color": "oklch(var(--b2))",
+          },
+        },
+      },
+    ],
   },
 };
 export default config;

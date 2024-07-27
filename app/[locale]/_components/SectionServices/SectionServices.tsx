@@ -15,12 +15,17 @@ const SectionServices: React.FC<SectionServicesProps> = ({ data }) => {
       leftContent={
         <>
           <Carousel data={data?.servicesOffered} />
+          <div className="lg:hidden">
+            <ProfessionalSummary
+              name={data?.name}
+              rating={data?.rating}
+              reviews={data?.reviews}
+            />
+          </div>
           <ServiceDetails
-            name={data?.name}
-            rating={data?.rating}
-            reviews={data?.reviews}
             bio={data?.bio}
             servicesOffered={data?.servicesOffered}
+            servicesDescription={data?.servicesDescription}
             location={data?.location}
             contact={data?.contact}
             availability={data?.availability}
