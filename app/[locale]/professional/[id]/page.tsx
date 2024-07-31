@@ -16,7 +16,7 @@ export default async function Professional() {
   const professional = await getProfessional();
 
   return (
-    <>
+    <div className="p-4 pb-20">
       <SectionServices data={professional} />
       <Section
         title="Orçamento que cabe no bolso"
@@ -46,6 +46,6 @@ export default async function Professional() {
         em cada etapa do processo."
         animationData={require("@/public/lotties/hand-shake.json")}
       />
-    </>
+    </div>
   );
 }

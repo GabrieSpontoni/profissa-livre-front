@@ -12,10 +12,10 @@ export default function Section({
   reverse?: boolean;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center pt-20 text-base-content">
+    <div className="flex flex-col items-center justify-center pt-8 text-base-content">
       <div className="hero">
         <div
-          className={`hero-content flex-col ${
+          className={`hero-content p-0 flex-col ${
             reverse ? "lg:flex-row-reverse" : "lg:flex-row"
           }`}
         >

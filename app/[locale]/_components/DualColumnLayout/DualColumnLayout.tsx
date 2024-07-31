@@ -12,7 +12,7 @@ const DualColumnLayout: React.FC<DualColumnLayoutProps> = ({
   return (
     <div className="flex justify-center">
       <div className="max-w-screen-xl flex w-full">
-        <div className="w-full lg:w-2/3 p-4 mr-4">{leftContent}</div>
+        <div className="w-full lg:w-2/3 mr-4">{leftContent}</div>
         <div className="hidden lg:block lg:w-1/3">
           <div className="sticky top-10 flex flex-col gap-4 p-4 w-full">
             {rightContent}
