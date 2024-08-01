@@ -21,8 +21,9 @@ interface CarouselProps {
 
 export default function Carousel({ data }: CarouselProps) {
   return (
-    <div className="h-96">
+    <div className="h-96 -mt-4 -mx-4 lg:m-0 lg:my-4">
       <Swiper
+        className="rounded-none lg:rounded-2xl"
         pagination={{
           type: "bullets",
           clickable: true,
@@ -36,7 +37,6 @@ export default function Carousel({ data }: CarouselProps) {
         style={{
           width: "100%",
           height: "100%",
-          borderRadius: "1rem",
         }}
       >
         {data?.map(({ id, serviceName, description, imageUrl }) => (
@@ -47,14 +47,12 @@ export default function Carousel({ data }: CarouselProps) {
                 background: `url(${imageUrl})`,
               }}
             />
-
             <div className="h-full w-full absolute left-0 top-0 bg-black opacity-70" />
             <div className="relative z-10 h-full w-full flex items-center justify-center">
               <div className="text-center">
                 <p className="sm:text-6xl md:text-4xl font-bold text-white">
                   {serviceName}
                 </p>
-
                 {description && (
                   <p className="text-md sm:text-xl lg:text-xl font-semibold text-white">
                     {description}

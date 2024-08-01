@@ -1,11 +1,28 @@
+"use client";
+import { useState } from "react";
 import { Link } from "@/navigation";
 
 export default function NavbarStart() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsDropdownOpen(false);
+  };
+
   return (
     <>
       <div className="lg:hidden">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-ghost btn-circle"
+            onClick={handleDropdownToggle}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -21,25 +38,28 @@ export default function NavbarStart() {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a>Homepage</a>
-            </li>
-            <li>
-              <a>Portfolio</a>
-            </li>
-            <li>
-              <a>About</a>
-            </li>
-          </ul>
+          {isDropdownOpen && (
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <Link href="/" onClick={handleLinkClick}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/professional/123" onClick={handleLinkClick}>
+                  Profissa
+                </Link>
+              </li>
+            </ul>
+          )}
         </div>
       </div>
       <div className="hidden lg:flex">
         <Link className="btn btn-ghost text-xl" href="/">
-          Profissa livre
+          Home
         </Link>
         <Link className="btn btn-ghost text-xl" href="/professional/123">
           Profissa
