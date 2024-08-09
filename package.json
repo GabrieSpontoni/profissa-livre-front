@@ -12,22 +12,22 @@
     "@types/react-lottie": "1.2.10",
     "lottie-react": "2.4.0",
     "next": "14.2.5",
-    "next-intl": "3.16.0",
+    "next-intl": "3.17.2",
     "next-themes": "0.3.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-icons": "5.2.1",
-    "swiper": "11.1.4"
+    "swiper": "11.1.9"
   },
   "devDependencies": {
-    "@types/node": "20.14.10",
+    "@types/node": "22.1.0",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "daisyui": "4.12.10",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.5",
-    "postcss": "8.4.39",
-    "tailwindcss": "3.4.4",
-    "typescript": "5.5.3"
+    "postcss": "8.4.41",
+    "tailwindcss": "3.4.9",
+    "typescript": "5.5.4"
   }
 }
