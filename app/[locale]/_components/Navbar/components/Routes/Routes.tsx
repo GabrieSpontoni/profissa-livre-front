@@ -1,9 +1,11 @@
 "use client";
 import { useState } from "react";
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 export default function NavbarStart() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const t = useTranslations("navbar");
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -45,7 +47,7 @@ export default function NavbarStart() {
             >
               <li>
                 <Link href="/" onClick={handleLinkClick}>
-                  Home
+                  {t("main")}
                 </Link>
               </li>
               <li>
@@ -59,7 +61,7 @@ export default function NavbarStart() {
       </div>
       <div className="hidden lg:flex">
         <Link className="btn btn-ghost text-xl" href="/">
-          Home
+          {t("main")}
         </Link>
         <Link className="btn btn-ghost text-xl" href="/professional/123">
           Profissa
