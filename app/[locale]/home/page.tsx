@@ -1,7 +1,59 @@
 import { useTranslations } from "next-intl";
+import CarouselHighlights from "../_components/CarouselHighlights/CarouselHighlights";
 
 export default function Home() {
   const t = useTranslations("navbar");
+
+  const data = [
+    {
+      id: 1,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+    {
+      id: 2,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+    {
+      id: 3,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+    {
+      id: 4,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+    {
+      id: 5,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+    {
+      id: 6,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+    {
+      id: 7,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+    {
+      id: 8,
+      name: "Profissa livre",
+      rating: 4.9,
+      reviews: 1000,
+    },
+  ];
   return (
     <div>
       <div
@@ -25,14 +77,14 @@ export default function Home() {
         <div className="hero-content text-start flex-initial">
           <div>
             <h1 className="text-xl font-bold lg:text-2xl">
-              Contrate os melhores fornecedores
+              Profissas livres destacados
             </h1>
-            <p className="py-1">
-              Comece a construir ou reformar sua casa com a gente. Simples e
-              grátis!
-            </p>
+            <p className="py-1">Contrate os melhores fornecedores</p>
           </div>
         </div>
+      </div>
+      <div className=" max-w-screen-xl py-7 mx-auto">
+        <CarouselHighlights data={data} />
       </div>
     </div>
   );
