@@ -19,15 +19,18 @@ export default function CarouselHighlights({ data }: CarouselHighlightsProps) {
       breakpoints={{
         0: {
           centeredSlides: true,
-          slidesPerView: 1.15,
+          slidesPerView: 1.4,
         },
         480: {
+          centeredSlides: true,
           slidesPerView: 1.5,
         },
         640: {
+          centeredSlides: true,
           slidesPerView: 2,
         },
         768: {
+          centeredSlides: true,
           slidesPerView: 2,
         },
         1024: {
@@ -45,16 +48,16 @@ export default function CarouselHighlights({ data }: CarouselHighlightsProps) {
     >
       {data?.map(({ id, serviceName, description, imageUrl }) => (
         <SwiperSlide key={id}>
-          <div className="card bg-base-100 px-4">
-            <figure>
+          <div className="card bg-rose-300 mx-1 mb-8">
+            <figure className="relative w-full h-48">
               <Image
                 src={
                   imageUrl ||
                   "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                 }
                 alt={serviceName || "Default Image"}
-                width={400}
-                height={400}
+                fill
+                className="object-cover"
               />
             </figure>
             <div className="card-body">
