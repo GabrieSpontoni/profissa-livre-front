@@ -15,22 +15,37 @@ interface CarouselHighlightsProps {
 export default function CarouselHighlights({ data }: CarouselHighlightsProps) {
   return (
     <Swiper
-      slidesPerView="auto"
+      loop
+      breakpoints={{
+        0: {
+          centeredSlides: true,
+          slidesPerView: 1.15,
+        },
+        480: {
+          slidesPerView: 1.5,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
+      }}
       pagination={{
         type: "bullets",
         clickable: true,
       }}
       modules={[Autoplay, Navigation, Pagination]}
     >
-      {data?.map(({ id, serviceName, description, imageUrl }, index) => (
-        <SwiperSlide
-          key={id}
-          style={{ width: "auto" }}
-          className={`px-2 lg:px-4 ${index === 0 ? "pl-4" : ""} ${
-            index === data.length - 1 ? "pr-4" : ""
-          }  `}
-        >
-          <div className="card bg-base-100 w-72">
+      {data?.map(({ id, serviceName, description, imageUrl }) => (
+        <SwiperSlide key={id}>
+          <div className="card bg-base-100 px-4">
             <figure>
               <Image
                 src={

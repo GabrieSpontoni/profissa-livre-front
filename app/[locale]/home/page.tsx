@@ -1,5 +1,12 @@
 import { useTranslations } from "next-intl";
-import CarouselHighlights from "../_components/CarouselHighlights/CarouselHighlights";
+import dynamic from "next/dynamic";
+
+const CarouselHighlights = dynamic(
+  () => import("../_components/CarouselHighlights/CarouselHighlights"),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   const t = useTranslations("navbar");
