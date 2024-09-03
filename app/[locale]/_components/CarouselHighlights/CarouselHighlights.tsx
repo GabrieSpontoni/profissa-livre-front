@@ -41,7 +41,11 @@ export default function CarouselHighlights({ data }: CarouselHighlightsProps) {
           slidesPerView: 4,
         },
       }}
-      navigation
+      pagination={{
+        type: "bullets",
+        clickable: true,
+      }}
+      loop={true}
       modules={[Autoplay, Navigation, Pagination]}
     >
       {data?.map(
