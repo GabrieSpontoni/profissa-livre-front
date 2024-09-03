@@ -2,8 +2,8 @@ import { Review } from "@/types/sectionServicesTypes";
 import React from "react";
 import { FiMapPin } from "react-icons/fi";
 import { GrUserWorker } from "react-icons/gr";
-import Lottie from "../Lottie/Lottie";
 import { IoRocketOutline } from "react-icons/io5";
+import ButtonBudget from "./ButtonBudget/ButtonBudget";
 
 interface ProfessionalSummaryProps {
   name?: string;
@@ -66,17 +66,11 @@ const ProfessionalSummary: React.FC<ProfessionalSummaryProps> = ({
       </div>
 
       <div className="lg:hidden flex items-center gap-2 fixed w-full bottom-0 left-0 p-4 z-10 bg-fixed">
-        <button className="btn btn-outline w-full">
-          Pedir orçamento grátis
-          <Lottie animationData={require("@/public/lotties/whatsapp.json")} />
-        </button>
+        <ButtonBudget />
       </div>
 
       <div className="hidden lg:flex">
-        <button className="btn btn-outline w-full">
-          Pedir orçamento grátis
-          <Lottie animationData={require("@/public/lotties/whatsapp.json")} />
-        </button>
+        <ButtonBudget />
       </div>
 
       <div className="flex flex-col gap-2">

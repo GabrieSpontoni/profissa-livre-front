@@ -14,51 +14,83 @@ export default function Home() {
   const data = [
     {
       id: 1,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
     {
       id: 2,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
     {
       id: 3,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
     {
       id: 4,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
     {
       id: 5,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
     {
       id: 6,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
     {
       id: 7,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
     {
       id: 8,
-      name: "Profissa livre",
+      name: "Gabriel Spontoni",
       rating: 4.9,
       reviews: 1000,
+      location: "Campo Grande, MS",
+      startPrice: 1000,
+      imageUrl:
+        "https://cdn.amigoconstrutor.com.br/wp-content/uploads/2021/03/137715-refacao-maos-a-obra-6-ferramentas-para-pedreiro-essenciais-em-uma-construcao.jpg",
     },
   ];
   return (
@@ -84,7 +116,7 @@ export default function Home() {
         <div className="hero-content text-start flex-initial">
           <div>
             <h1 className="text-xl font-bold lg:text-2xl">
-              Profissas livres destacados
+              Profissas destacados
             </h1>
             <p className="py-1">Contrate os melhores fornecedores</p>
           </div>

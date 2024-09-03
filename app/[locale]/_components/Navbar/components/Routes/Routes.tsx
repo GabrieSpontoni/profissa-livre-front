@@ -50,11 +50,6 @@ export default function NavbarStart() {
                   {t("main")}
                 </Link>
               </li>
-              <li>
-                <Link href="/professional/123" onClick={handleLinkClick}>
-                  Profissa
-                </Link>
-              </li>
             </ul>
           )}
         </div>
@@ -62,9 +57,6 @@ export default function NavbarStart() {
       <div className="hidden lg:flex">
         <Link className="btn btn-ghost text-xl" href="/">
           {t("main")}
-        </Link>
-        <Link className="btn btn-ghost text-xl" href="/professional/123">
-          Profissa
         </Link>
       </div>
     </>
