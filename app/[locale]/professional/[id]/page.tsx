@@ -4,7 +4,7 @@ import SectionServices from "../../_components/SectionServices/SectionServices";
 export default async function Professional() {
   const getProfessional = async () => {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/profissa/12121`,
+      `${process.env.NEXT_PUBLIC_API_URL}/profissa/66d912b194a952c80ad96929`,
       {
         next: { revalidate: 0 },
       }
